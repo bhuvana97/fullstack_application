@@ -66,7 +66,7 @@ function EditUser() {
             language,
             releasedyear,
         director, camera,producer} =inputdata;
-        const res2 = await fetch(`http://localhost:5001/updatestud/${id}`, {
+        const res2 = await fetch(`https://fullstackapp-khja.onrender.com/updatestud/${id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"
