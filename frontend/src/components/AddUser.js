@@ -37,7 +37,7 @@ function AddUser() {
         releasedyear,
     director, camera,producer} = formdata;
 
-    const res = await fetch("http://localhost:5001/addstud", {
+    const res = await fetch("https://fullstackapp-khja.onrender.com/addstud", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
