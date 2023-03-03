@@ -1,48 +1,4 @@
-// import {Table,Button} from 'react-bootstrap';
-// import "./Home.css"
-// function Home() {
-//   return (
-//     <Table striped bordered hover>
-//       <thead>
-//         <tr>
-//           <th>#</th>
-//           <th>Movie</th>
-//           <th>Actor</th>
-//           <th>Actress</th>
-//           <th>Language</th>
-// <th>Director</th>
-// <th>Released Year</th>
-// <th>Camera</th>
-// <th>Producer</th>
-// <th>Actions</th>
-//         </tr>
-//       </thead>
-//       <tbody>
-//         <tr>
-//           <td>1</td>
-//           <td>Brokeback mountain</td>
-//           <td>Heath Ledger</td>
-//           <td> Jake Gyllenhaal</td>
-//           <td>English</td>
-//           <td>Ang Lee</td>
-//           <td></td>
-//           <td></td>
-//           <td></td>
-//           <td className='d-flex justify-content-between'>
 
-      
-//           <Button variant="outline-primary">Edit</Button>   
-//           <Button variant="outline-danger">Danger</Button>
-//           </td>
-//         </tr>
-        
-    
-//       </tbody>
-//     </Table>
-//   );
-// }
-
-// export default Home;
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 
@@ -53,7 +9,7 @@ export default function Home() {
     //get student Data
     const getstuddata = async () => {
 
-        const res = await fetch("http://localhost:5001/getstud", {
+        const res = await fetch("https://fullstackapp-khja.onrender.com/getstud", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -77,7 +33,7 @@ export default function Home() {
     //Delete student data
     const deletestud = async (id) => {
 
-        const res2 = await fetch(`http://localhost:5001/deletestud/${id}`, {
+        const res2 = await fetch(`https://fullstackapp-khja.onrender.com/deletestud/${id}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json"
