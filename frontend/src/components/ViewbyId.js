@@ -13,7 +13,7 @@ const { id } = useParams("");
 console.log(id);
 
 const getstuddata = async () => {
-    const res = await fetch(`http://localhost:5001/getstud/${id}`, {
+    const res = await fetch(`https://fullstackapp-khja.onrender.com/getstud/${id}`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json"
